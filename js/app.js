@@ -4,4 +4,10 @@ angular.module('wbPhotoGallery', [
     'ngTouch',
     'wbPhotoGallery.gallery',
     'wbPhotoGallery.galleryServices'
-]);
+])
+    .directive('ngPhotoGallery', function (){
+        return {
+            restrict: "E",
+            templateUrl: 'gallery.html'
+        }
+    });
